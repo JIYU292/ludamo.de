@@ -3,58 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MusikWelt - Ihre Welt der Musik</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Alles über Hauskatzen</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            padding: 20px 0;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+        }
+        .cat-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e3e3e3;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">🎵 MusikWelt</a>
-            </div>
-            <ul>
-                <li><a href="index.html" class="active">Startseite</a></li>
-                <li><a href="genres.html">Genres</a></li>
-                <li><a href="ueber-uns.html">Über Uns</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Willkommen auf der Webseite für Katzenliebhaber</h1>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Willkommen in der MusikWelt</h1>
-                <p>Entdecken Sie die faszinierende Welt der Klänge, Rhythmen und Melodien.</p>
-                <a href="genres.html" class="button">Genres entdecken</a>
-            </div>
+    <main class="container">
+        <section class="section">
+            <h2>Die Hauskatze: Ein Überblick</h2>
+            <p>Die Hauskatze (Felis catus) ist eines der beliebtesten Haustiere weltweit und in Deutschland. Sie stammt von der afrikanischen Wildkatze ab und wurde vor Tausenden von Jahren domestiziert. Katzen sind für ihre unabhängige und dennoch liebevolle Art bekannt.</p>
+            <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Eine neugierige Katze schaut in die Kamera" class="cat-image">
         </section>
 
-        <section class="featured-content">
-            <h2>Empfohlene Inhalte</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Die Geschichte des Rock</h3>
-                    <p>Von den Anfängen in den 1950ern bis zu den modernen Subgenres. Ein tiefer Einblick in eine laute Revolution.</p>
-                    <a href="genres.html#rock">Mehr erfahren</a>
-                </div>
-                <div class="card">
-                    <h3>Meister der Klassik</h3>
-                    <p>Lernen Sie die Komponisten kennen, deren Werke die Zeit überdauert haben: Bach, Mozart, Beethoven und mehr.</p>
-                    <a href="genres.html#klassik">Mehr erfahren</a>
-                </div>
-                <div class="card">
-                    <h3>Was ist Jazz?</h3>
-                    <p>Eine Einführung in die Welt der Improvisation, der Synkopen und der Seele der afroamerikanischen Musik.</p>
-                    <a href="genres.html#jazz">Mehr erfahren</a>
-                </div>
-            </div>
+        <section class="section">
+            <h2>Merkmale und Verhalten</h2>
+            <p>Hauskatzen gibt es in unzähligen Rassen, Farben und Mustern. Ihr Gewicht liegt im Durchschnitt zwischen 3,5 und 5,5 kg. Sie sind Fleischfresser und ausgezeichnete Jäger. Ihr Schnurren kann sowohl ein Zeichen von Wohlbefinden als auch von Stress sein.</p>
+            <ul>
+                <li><strong>Kommunikation:</strong> Katzen kommunizieren durch eine Vielzahl von Lauten (Miauen, Schnurren, Fauchen) sowie durch Körpersprache.</li>
+                <li><strong>Pflege:</strong> Sie sind sehr saubere Tiere und verbringen viel Zeit mit der Fellpflege.</li>
+                <li><strong>Schlaf:</strong> Katzen können bis zu 16 Stunden am Tag schlafen, um Energie für die Jagd zu sparen.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Tipps für die Katzenhaltung</h2>
+            <p>Eine artgerechte Haltung ist entscheidend für das Wohlbefinden Ihrer Katze. Hier sind einige grundlegende Tipps:</p>
+            <ul>
+                <li>Sorgen Sie für eine ausgewogene Ernährung und frisches Wasser.</li>
+                <li>Stellen Sie einen Kratzbaum zur Verfügung, um die Krallen zu pflegen und die Möbel zu schonen.</li>
+                <li>Regelmäßige Tierarztbesuche und Impfungen sind wichtig für die Gesundheit.</li>
+                <li>Spielen Sie regelmäßig mit Ihrer Katze, um sie geistig und körperlich zu fordern.</li>
+            </ul>
+             <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ein süßes Kätzchen liegt auf einem Teppich" class="cat-image">
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 MusikWelt. Alle Rechte vorbehalten.</p>
+        <div class="container">
+            <p>&copy; 2025 Meine Katzen-Webseite. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
 
 </body>
