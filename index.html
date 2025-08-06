@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于爱情</title>
+    <style>
+        /* --- 全局样式 --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fde2e4; /* 淡粉色背景 */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #d90429; /* 鲜艳的红色 */
+            font-weight: 300;
+        }
+
+        /* --- 头部 --- */
+        .header {
+            background-image: url('https://images.unsplash.com/photo-1523902497855-603f1b4c97a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* 半透明黑色遮罩 */
+        }
+
+        .header-content {
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        /* --- 内容区域 --- */
+        .content-section {
+            padding: 60px 0;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* --- 爱的方面卡片 --- */
+        .aspects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .aspect-card {
+            background: #fff9fa; /* 非常浅的粉色 */
+            border: 1px solid #f8d7da;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .aspect-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .aspect-card h3 {
+            color: #d90429;
+            margin-top: 0;
+        }
+
+        .aspect-card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* --- 语录部分 --- */
+        .quotes-section {
+            background-color: #d90429;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .quotes-section .container {
+             background-color: transparent;
+             box-shadow: none;
+             margin: 0 auto;
+        }
+
+        .quote {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .quote p {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .quote footer {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        /* --- 图库 --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .gallery-image:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* --- 页脚 --- */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        /* --- 响应式设计 --- */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>爱是什么？</h1>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>爱的模样</h2>
+            <div class="aspects-grid">
+                <div class="aspect-card">
+                    <h3>陪伴</h3>
+                    <p>是“有我在这里”，是在彼此身边的温暖与安心。无论顺境逆境，总有一个人愿意与你分享，分担。</p>
+                </div>
+                <div class="aspect-card">
+                    <h3>激情</h3>
+                    <p>是心动的瞬间，是无法抑制的思念。它是爱情中最炽热的火焰，让关系充满活力与渴望。</p>
+                </div>
+                <div class="aspect-card">
+                    <h3>承诺</h3>
+                    <p>是对未来的共同期许和责任。它意味着选择与一个人共同面对生活的种种，建立长久而稳定的联系。</p>
+                </div>
+                <div class="aspect-card">
+                    <h3>理解</h3>
+                    <p>是深入灵魂的共鸣，是懂得对方的言外之意。它建立在尊重和同理心之上，让彼此感觉被接纳。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="quotes-section">
+        <div class="container">
+            <div class="quote">
+                <p>“爱不是彼此凝视，而是一起注视着同一个方向。”</p>
+                <footer>—— 安东尼·德·圣-埃克苏佩里</footer>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>爱的瞬间</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1502790678221-9556a5d7c313?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="一对情侣在日落下牵手" class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1567500053963-35b89a888c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="一对老夫妻相视而笑" class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1541512419489-0524c5789f2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="家人拥抱的温馨画面" class="gallery-image">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 为爱而生。保留所有权利。</p>
+    </footer>
+
+</body>
+</html>
